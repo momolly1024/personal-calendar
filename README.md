@@ -1,4 +1,10 @@
-# personal-calendar
+# Personal Calendar
+
+![](https://i.imgur.com/9kTuLb3.png)
+
+use React / Python / Google sheet to write a personal calendar
+
+## HOW TO USE
 
 1. git clone
 2. cd /frontend
@@ -16,6 +22,6 @@
 4. change key.js
 5. change calendar.json
 
-### medium post
+## Tutorial on Medium Post
 
 HERE!
