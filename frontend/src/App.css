@@ -1,0 +1,14 @@
+.App {
+    height: 100%;
+    margin: 2rem;
+    text-align: center;
+}
+
+.calendarContainer {
+    width: 75%;
+    /* height: auto; */
+    margin: auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 10px 5px 5px rgb(138, 136, 136);
+}
