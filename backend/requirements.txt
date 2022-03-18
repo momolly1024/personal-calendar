@@ -1,0 +1,6 @@
+gspread
+uvicorn
+oauth2client
+typing
+fastapi
+pydantic

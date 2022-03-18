@@ -1,15 +1,21 @@
 # personal-calendar
 
-frontend
-react
-yarn install
-yarn start
+1. git clone
+2. cd /frontend
 
-backend
-python
-python3 -m venv env
-source env/bin/activate
-pip install requirements.txt
+-   yarn install
+-   yarn start
 
-uvicorn main:app --reload
-# medium
+3. cd /backend
+
+-   python3 -m venv env
+-   source env/bin/activate
+-   pip install -r requirements.txt
+-   uvicorn main:app --reload
+
+4. change key.js
+5. change calendar.json
+
+### medium post
+
+HERE!

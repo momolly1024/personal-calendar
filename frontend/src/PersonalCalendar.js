@@ -9,7 +9,6 @@ import Datetime from 'react-datetime'
 import { v4 as uuidv4 } from 'uuid'
 import Swal from 'sweetalert2'
 import url from './url'
-
 const initEvents = [
     { title: 'All Day Event', start: getDate('YEAR-MONTH-01') },
     {
@@ -106,7 +105,7 @@ const PersonalCalendar = () => {
             })
             .catch((error) => console.log('error', error))
     }
- 
+
     return (
         <div>
             <div>

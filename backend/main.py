@@ -4,24 +4,14 @@ from typing import Optional
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-import os
+import key
 
 Json = "calendar.json"
 Url = ["https://spreadsheets.google.com/feeds"]
 Connect = SAC.from_json_keyfile_name(Json, Url)
 GoogleSheets = gspread.authorize(Connect)
-# Sheet = GoogleSheets.open_by_key(os.environ.get("sheetKey"))
-Sheet = GoogleSheets.open_by_key('1p_1fAO-8og40blWFHPhJ77hub8b1KqZ5Iy53m0Jz0_0')
+Sheet = GoogleSheets.open_by_key(key.sheetKey)
 Sheets = Sheet.sheet1
-# print(key.sheetKey)
-# dataTitle = ["date", "time", "events", "place"]
-# datas = ["03/11", "15:00", "dinner", "taipei"]
-# # Sheets.append_row(dataTitle)
-# Sheets.append_row(datas)
-# print("寫入成功")
-# print(Sheets.get_all_values())
-# list_of_dicts = Sheets.get_all_records()
-# print(list_of_dicts)
 
 # ----- fast api -----
 
